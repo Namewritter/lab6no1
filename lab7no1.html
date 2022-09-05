@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function Calculate(){
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+
+            document.getElementById('result').value = num1+num2; 
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="num1" style="width: 70px;">
+        <label>+</label>
+        <input type="text" id="num2" style="width: 70px;">
+        <label>=</label>
+        <input type="text" id="result" style="width: 70px;">
+        <input type="button" value="Go Go" onclick="Calculate()">
+    </form>
+</body>
+</html>
